@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="repository.gtube" name="[COLOR orangered]G-Tube Repository[/COLOR]" version="1.0.0" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Tube Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.gtube/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.gtube/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gtube/master/</datadir>
+    </dir>  
+    <dir>
+        <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
+        <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
+        <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
+    </dir>        
+    <dir>
+        <info compressed="false">https://Rockodi.com/Kodi-19/addons.xml</info>
+        <checksum>https://Rockodi.com/Kodi-19/addons.xml.md5</checksum>
+        <datadir zip="true">https://Rockodi.com/Kodi-19/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>YouTube Category Add-ons</summary>
+    <description>A collection of Add-ons which focus on specific YouYube channels sorted by topic.[CR]You will need a personal YouTube api key from Google, entered into the Youtube add-on which will work on all the add-ons.[CR]Instruction video:[CR]https://youtu.be/N18czV5tj5o </description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
+    
+<addon id="plugin.video.xtasy19" name="[COLOR green]XTASY D[/COLOR]" version="1.0.7" provider-name="Xtasy Dreamer">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Channels and playlists organised by categories using YouTube only.</summary>
+        <description lang="en">Xtasy D is a mix bag of one click playlists for all!</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<website></website>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+    
+<addon id="plugin.video.duffyou" name="Duff You" version="0.1.3" provider-name="La Taberna">
+    <requires>
+        <import addon="script.module.six" version="1.11.0" />
+        <import addon="script.module.simplecache" />
+        <import addon="script.module.inputstreamhelper" version="0.5.0" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
+        <provides>video</provides>
+    </extension>
+	<extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">YouTube without needing API keys</summary>
+        <description lang="es">Hasta las narices de las apikeys de YouTube? Y de ver como calidad máxima los videos de la plataforma solo hasta 720p?[CR]Pues se acabó! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningún tipo de restricción para ver los videos a la máxima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
+        <description lang="en">Tired of dealing with YouTube/Google api keys and only able to see the videos on the platform up to 720p?[CR]Well, that's over! From our team we present a new YouTube addon, where NO API KEY is needed, no logging in, nor are there any kind of restrictions to watch the videos at the highest quality offered (720p, 1080p, 2K and 4K!)[CR]All this and much more more...</description>
+        <disclaimer lang="es">Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>    
+        <disclaimer lang="en">This add-on is offered as [COLOR red][B]free[/B][/COLOR][CR][COLOR red][B]software! It is not allowed[/B][/COLOR] to be distributed or pre-installed on any type of device including in other software and/or hardware package for which the end user must [COLOR red][B]pay or make a donation[/B][/COLOR], for its acquisition, for its use or for receiving assistance.[CR]It must be redistributed for free. If you believe that any of these rules is not being followed, please contact us.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <license>[B]This is free software[/B]</license>
+        <news>July 4 2022 - English added by G-Man[CR]Jan 23 2022 - Added external playlist playback option[CR]Jan 23 2022 - Minor fixes
+        </news>
+    </extension>
+</addon>
+    
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.18+matrix.1" provider-name="anxdpanic, bromix">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="resources/lib/startup.py"/>
+  <extension point="xbmc.python.module" library="resources/lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <news>
+[fix] Fix to_str |contrib: RNavega|
+[fix] Fix playback buffering |contrib: RNavega|
+[lang] translation updates from Weblate
+        </news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <forum>https://ytaddon.panicked.xyz/forum</forum>
+    <website>https://www.youtube.com</website>
+    <source>https://github.com/anxdpanic/plugin.video.youtube</source>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="bg_BG">Добавка за YouTube</summary>
+    <summary lang="cs_CZ">Plugin pro YouTube</summary>
+    <summary lang="de_DE">Plugin für YouTube</summary>
+    <summary lang="el_GR">Πρόσθετο YouTube</summary>
+    <summary lang="en_GB">Plugin for YouTube</summary>
+    <summary lang="es_ES">Plugin para YouTube</summary>
+    <summary lang="es_MX">Plugin para YouTube</summary>
+    <summary lang="fr_FR">Plugin pour YouTube</summary>
+    <summary lang="he_IL">תוסף עבור YouTube</summary>
+    <summary lang="hu_HU">YouTube kiegészítő</summary>
+    <summary lang="it_IT">Plugin per YouTube</summary>
+    <summary lang="ko_KR">유튜브 플러그인</summary>
+    <summary lang="nb_NO">Tillegg for YouTube</summary>
+    <summary lang="pl_PL">Wtyczka YouTube</summary>
+    <summary lang="ru_RU">Видеодополнение YouTube</summary>
+    <summary lang="tr_TR">YouTube için eklenti</summary>
+    <summary lang="vi_VN">Plugin dành cho YouTube</summary>
+    <summary lang="zh_CN">YouTube附加元件</summary>
+    <summary lang="zh_TW">YouTube附加元件</summary>
+    <description lang="bg_BG">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+    <description lang="cs_CZ">YouTube je jedna z největších webových stránek světa sdílející video.</description>
+    <description lang="de_DE">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
+    <description lang="el_GR">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
+    <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
+    <description lang="es_ES">YouTube es uno de los sitios web más grande del mundo para compartir vídeos.</description>
+    <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
+    <description lang="fr_FR">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+    <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
+    <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+    <description lang="it_IT">YouTube è uno dei più grandi siti web di condivisione video del mondo.</description>
+    <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
+    <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+    <description lang="pl_PL">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
+    <description lang="ru_RU">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
+    <description lang="tr_TR">YouTube, dünya üzerindeki en büyük video paylaşma platformlarından birisidir.</description>
+    <description lang="vi_VN">YouTube là một trong những trang web chia sẻ video lớn nhất trên thế giới.</description>
+    <description lang="zh_CN">「Youtube」是全世界最大的影片分享網站</description>
+    <description lang="zh_TW">「Youtube」是全世界最大的影片分享網站</description>
+    <disclaimer lang="cs_CZ">Tento plugin není schválen společností Google</disclaimer>
+    <disclaimer lang="de_DE">Dieses Plugin ist nicht von Google befürwortet</disclaimer>
+    <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
+    <disclaimer lang="en_GB">This plugin is not endorsed by Google</disclaimer>
+    <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
+    <disclaimer lang="es_MX">Este add-on no está respaldado por Google</disclaimer>
+    <disclaimer lang="it_IT">Questo plugin non è promosso da Google</disclaimer>
+    <disclaimer lang="ko_KR">이 플러그인은 Google의 허가를 받지 않았습니다</disclaimer>
+    <disclaimer lang="pl_PL">Ta wtyczka nie jest zatwierdzona przez Google</disclaimer>
+    <disclaimer lang="ru_RU">Плагин не поддерживается Google</disclaimer>
+    <disclaimer lang="tr_TR">Bu eklenti Google tarafından üretilmemiştir</disclaimer>
+    <disclaimer lang="vi_VN">Plugin này không được xác nhận bởi Google</disclaimer>
+    <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
+  </extension>
+</addon>
+    
+</addons>
